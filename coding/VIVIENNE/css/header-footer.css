@@ -1,0 +1,65 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap');
+
+* {box-sizing: border-box;}
+body {width: 100%;max-width: 740px;height: auto;margin: 0 auto;}
+html.active {overflow-y: hidden;}
+
+/* header////// */
+#header {position: relative;z-index: 9999;padding-top: 20px;}
+#header .close {position: absolute;right: 30px;top: 30px;width: 45px;height: 45px;cursor: pointer;}
+#header .close span {font-size: 45px;}
+
+#header .logo {text-align: center;}
+#header .logo a {}
+#header .logo a img {}
+
+#header nav {position: fixed;left: 50%;transform:translateX(-50%);bottom: 0;z-index: 1000;width: 100%;max-width:740px;height: 60px;padding: 0 25px;border-radius: 20px 20px 0 0;background-color: #999;}
+#header nav .gnb {display: flex;justify-content: space-between;align-items: center;padding: 10px 0;}
+#header nav .gnb li {width: 36px;height: 36px;}
+#header nav .gnb li a {}
+#header nav .gnb li a span {font-size: 36px;color: #fff;font-variation-settings:'FILL' 1;}
+
+#header .menu_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);display:none;width: 100%;height: 100vh;max-width: 740px;font-family: 'Roboto', sans-serif;color: #fff;background-color: rgb(136,136,136);}
+#header .menu_wrap .menu {padding: 20px;}
+#header .menu_wrap .menu > ul {margin-top: 50px;}
+#header .menu_wrap .menu > ul > li {margin-bottom: 15px;}
+#header .menu_wrap .menu > ul > li:last-child {margin-bottom: 0px;}
+#header .menu_wrap .menu > ul > li > span {display: block;font-family: 'Noto Sans KR', sans-serif;font-size: 16px;}
+#header .menu_wrap .menu > ul > li > a {display: inline-block;font-size: 40px;font-weight: bold;}
+#header .menu_wrap .menu > ul > li > a.active {position: relative;;color: #ffde2f;}
+#header .menu_wrap .menu > ul > li > a.active::after {content: '';position: absolute;right: -10px;top: 0;width: 10px;height: 10px;border-radius: 50%;background-color: #ffde2f;}
+
+#header .search_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);z-index: 200;display: none;width: 100%;height: 100vh;max-width: 740px;padding: 350px 20px;text-align: center;background-color: #fff;}
+#header .search_wrap form {display: flex;width: 100%;border-bottom: 1px solid #444;}
+#header .search_wrap form input {width: 100%;border: none;outline: none;background: none;font-size: 22px;}
+#header .search_wrap form button {background: none;border: none;}
+#header .search_wrap form button span {width: 40px;height: 40px;font-size: 40px;font-weight: 500;color: #333;cursor: pointer;}
+#header .search_wrap .link_wrap {margin-top: 25px;text-align: center;}
+#header .search_wrap .link_wrap a {display:inline-block;padding: 8px 20px;margin: 0 5px 10px;border-radius: 20px;border: 1px solid #c6c6c6;font-size: 12px;color: #888;}
+
+/* footer/// */
+#footer {padding-top: 20px;margin-top: 70px;border-top: 1px solid #d9d9d9 ;color: #333;}
+#footer .ft_title {font-family: 'Shippori Mincho', serif;font-size: 28px;font-weight: 500;text-align: center;text-transform: uppercase;letter-spacing: -0.02em;}
+
+#footer .ft_customer {color: #999;padding: 0 40px;}
+#footer .ft_customer table {margin-top: 25px;border-collapse: collapse;}
+#footer .ft_customer table tr {}
+#footer .ft_customer table tr td {padding: 5px 30px 5px 0;}
+#footer .ft_customer table tr td:last-child {padding: 0;}
+
+#footer .ft_bank {padding: 25px 40px 20px;margin-top: 25px;border-top: 1px solid #d9d9d9;font-size: 14px;color: #999;}
+
+#footer .ft_info {padding: 0px 40px 100px;}
+#footer .ft_info ul {display: flex;justify-content: left;align-items: center;margin-bottom: 30px;}
+#footer .ft_info ul li {margin-right: 15px;}
+#footer .ft_info ul li:last-child {position: relative;;margin: 0;}
+#footer .ft_info ul li a {display: inline-block;font-size: 12px;}
+#footer .ft_info ul li a span {font-size: 12px;vertical-align: middle;color: #333;}
+#footer .ft_info ul li a span.active {transform: rotate(180deg);}
+
+#footer .ft_info .ft_business {display: none;font-size: 14px;color: #999;}
+#footer .ft_info .ft_business p {margin-bottom: 5px;}
+#footer .ft_info .ft_business p:last-child {margin-bottom: 0px;}
+#footer .ft_info .ft_business a {display: block;margin-bottom: 5px;color: #333;}

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레스토랑</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style-attraction.css">
+</head>
+<body>
+  <div class="search_box">
+    <div class="inner">
+      <form>
+        <input type="text" placeholder="검색어를 입력해 주세요">
+        <button><span class="material-symbols-outlined">search</span></button>
+      </form>
+      <div class="closeBtn">
+        <span class="material-symbols-outlined">close</span>
+      </div>
+    </div>
+  </div>
+  <div class="depth1_bg"></div>
+  
+  <header class="clear">
+    <div class="inner">
+      <h1><a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="information1.html">이용정보</a>
+            <ul class="depth1">
+              <li><a href="information1.html">뉴스/공지</a></li>
+              <li><a href="information2.html">운영시간</a></li>
+              <li><a href="information3.html">오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="promotion1.html">요금&amp;프로모션</a>
+            <ul class="depth1">
+              <li><a href="promotion1.html">스페셜 프로모션</a></li>
+              <li><a href="promotion2.html">체험 프로그램</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="attraction1.html" class="active">즐길거리</a>
+            <ul class="depth1">
+              <li><a href="attraction1.html">어트랙션</a></li>
+              <li><a href="attraction2.html">주토피아</a></li>
+              <li><a href="attraction3.html">레스토랑</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="membership1.html">멤버십</a>
+            <ul class="depth1">
+              <li><a href="membership1.html">권종소개</a></li>
+              <li><a href="membership2.html">제휴사 혜택</a></li>
+              <li><a href="membership3.html">스피드웨이</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="editor.html">에버랜드 더 알아보기</a>
+            <ul class="depth1">
+              <li><a href="editor.html">Editor's Pick</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="util">
+        <div class="search">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="inner">
+      <h6>restaurant</h6>
+      <div id="breadcrumb">
+        <ul>
+          <li class="location"><a href="index.html">홈</a></li>
+          <li class="location">
+            <p class="active">즐길거리</p>
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+            <ol>
+              <li><a href="information1.html">이용정보</a></li>
+              <li><a href="promotion1.html">요금&amp;프로모션</a></li>
+              <li><a href="attraction1.html" class="active">즐길거리</a></li>
+              <li><a href="membership1.html">멤버십</a></li>
+              <li><a href="editor.html">에버랜드 더 알아보기</a></li>
+            </ol>
+          </li>
+          <li class="location">
+            <p class="active">레스토랑</p>
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+            <ol>
+              <li><a href="attraction1.html">어트랙션</a></li>
+              <li><a href="attraction2.html">주토피아</a></li>
+              <li><a href="attraction3.html" class="active">레스토랑</a></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <div id="attraction1">
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">#전체</a></li>
+            <li><a href="#tabs-2">#식사</a></li>
+            <li><a href="#tabs-3">#카페</a></li>
+            <li><a href="#tabs-4">#스낵</a></li>
+            <li><a href="#tabs-5">#패스트푸드</a></li>
+          </ul>
+          <div id="tabs-1">
+            <ul class="item clear">
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant00.jpg" alt="restaurant00">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#한와담</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant01.jpg" alt="restaurant01">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#온더보더</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant02.jpg" alt="restaurant02">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#크리스탈 제이드</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant03.jpg" alt="restaurant03">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#PIZZA IL FORNO</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant04.jpg" alt="restaurant04">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#폴바셋</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant05.jpg" alt="restaurant05">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#포메인</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant06.jpg" alt="restaurant06">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#라운지엑스</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant07.jpg" alt="restaurant07">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#KFC</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant08.jpg" alt="restaurant08">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#매직타임 레스토랑</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant09.jpg" alt="restaurant09">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#알파인 레스토랑</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant10.jpg" alt="restaurant10">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#한가람</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant11.jpg" alt="restaurant11">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#차이나 문</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant12.jpg" alt="restaurant12">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#쿠치나 마리오</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant13.jpg" alt="restaurant13">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#홀랜드 빌리지</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant14.jpg" alt="restaurant14">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#알프스 쿠체</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant15.jpg" alt="restaurant15">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#타운즈 마켓 레스토랑</p>
+                  <p>#매직랜드</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant16.jpg" alt="restaurant16">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#오리엔탈 누들 레스토랑</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant17.jpg" alt="restaurant17">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#Cafe 정글캠프</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant18.jpg" alt="restaurant18">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#버거카페 유럽</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant19.jpg" alt="restaurant19">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#버거카페 아메리카</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant20.jpg" alt="restaurant20">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#BHC 치킨</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant21.jpg" alt="restaurant21">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#스타벅스</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant22.jpg" alt="restaurant22">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#가든테라스(카페)</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant23.jpg" alt="restaurant23">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#달콤커피 판다월드점</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant24.jpg" alt="restaurant24">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#달콤커피 가든점</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant25.jpg" alt="restaurant25">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#커피빈</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant26.jpg" alt="restaurant26">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#뉴욕센트럴 스낵</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant27.jpg" alt="restaurant27">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#멀린스 스낵</p>
+                  <p>#매직랜드</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant28.jpg" alt="restaurant28">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#아마존 스낵</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant29.jpg" alt="restaurant29">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#타무 스낵</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant30.jpg" alt="restaurant30">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#가든테라스(피자)</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant31.jpg" alt="restaurant31">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#스낵 버스터</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant32.jpg" alt="restaurant32">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#팝콘카트</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-2">
+            <ul class="item clear">
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant00.jpg" alt="restaurant00">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#한와담</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant01.jpg" alt="restaurant01">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#온더보더</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant02.jpg" alt="restaurant02">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#크리스탈 제이드</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant03.jpg" alt="restaurant03">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#PIZZA IL FORNO</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant05.jpg" alt="restaurant05">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#포메인</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant08.jpg" alt="restaurant08">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#매직타임 레스토랑</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant09.jpg" alt="restaurant09">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#알파인 레스토랑</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant10.jpg" alt="restaurant10">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#한가람</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant11.jpg" alt="restaurant11">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#차이나 문</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant12.jpg" alt="restaurant12">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#쿠치나 마리오</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant13.jpg" alt="restaurant13">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#홀랜드 빌리지</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant14.jpg" alt="restaurant14">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#알프스 쿠체</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant15.jpg" alt="restaurant15">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#타운즈 마켓 레스토랑</p>
+                  <p>#매직랜드</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant16.jpg" alt="restaurant16">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#오리엔탈 누들 레스토랑</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant30.jpg" alt="restaurant30">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#가든테라스(피자)</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-3">
+            <ul class="item clear">
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant04.jpg" alt="restaurant04">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#폴바셋</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant06.jpg" alt="restaurant06">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#라운지엑스</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant21.jpg" alt="restaurant21">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#스타벅스</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant22.jpg" alt="restaurant22">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#가든테라스(카페)</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant23.jpg" alt="restaurant23">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#달콤커피 판다월드점</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant24.jpg" alt="restaurant24">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#달콤커피 가든점</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant25.jpg" alt="restaurant25">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#커피빈</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-4">
+            <ul class="item clear">
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant26.jpg" alt="restaurant26">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#뉴욕센트럴 스낵</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant27.jpg" alt="restaurant27">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#멀린스 스낵</p>
+                  <p>#매직랜드</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant28.jpg" alt="restaurant28">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#아마존 스낵</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant29.jpg" alt="restaurant29">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#타무 스낵</p>
+                  <p>#주토피아</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant31.jpg" alt="restaurant31">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#스낵 버스터</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant32.jpg" alt="restaurant32">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#팝콘카트</p>
+                  <p>#글로벌페어</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-5">
+            <ul class="item clear">
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant07.jpg" alt="restaurant07">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#KFC</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant18.jpg" alt="restaurant18">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#버거카페 유럽</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant19.jpg" alt="restaurant19">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#버거카페 아메리카</p>
+                  <p>#아메리칸 어드벤처</p>
+                </div>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="./images/restaurant20.jpg" alt="restaurant20">
+                </a>
+                <div class="text">
+                  <span><img src="./images/label.png" alt="label"></span>
+                  <p>#BHC 치킨</p>
+                  <p>#유러피언 어드벤처</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <div class="ft_left">
+        <ul class="ft_list">
+          <li><a href="#none">에버랜드 리조트 소개</a></li>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">이메일주소 무단수집 거부</a></li>
+          <li><a href="#none">CAST 참여</a></li>
+          <li><a href="#none">사이트맵</a></li>
+        </ul>
+        <div class="address">
+          <p>경기도 용인시 처인구 포곡음 에버랜드로 199 삼성물산(주)</p>
+          <p>대표이사:정해린 <span></span> 사업자등록번호:135-85-04288 <span></span> 통신판매업 신고번호:제2006-용인처인-0216호 <span></span> <a href="#none">사업자정보확인</a></p>
+          <p>
+            <a href="#none">손님상담센터:031-320-5000(유료)</a>
+            <span></span>
+            <a href="#none">개인정보처리방침</a>
+            <span></span>
+            <a href="#none">방침 개정 안내</a>
+            <span></span>
+            <a href="#none">입찰 공고</a>
+          </p>
+          <p class="copy">Copyright&copy;C&amp;T Corporation.All rights reserved.</p>
+        </div>
+      </div>
+      <div class="ft_right">
+        <div class="sns">
+          <ul>
+            <li><a href="#none"><img src="./images/icon_160.png" alt=""></a></li>
+            <li><a href="#none"><img src="./images/icon_162.png" alt=""></a></li>
+            <li><a href="#none"><img src="./images/icon_164.png" alt=""></a></li>
+            <li><a href="#none"><img src="./images/icon_166.png" alt=""></a></li>
+            <li><a href="#none"><img src="./images/icon_168.png" alt=""></a></li>
+            <li><a href="#none"><img src="./images/icon_170.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="select">
+          <ul>
+            <li>리조트 내 시설
+              <ul class="select_dep">
+                <li><a href="#none">교통박물관</a></li>
+                <li><a href="#none">호암미술관</a></li>
+                <li><a href="#none">글렌로스 골프클럽</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>FAMILY SITE
+              <ul class="select_dep">
+                <li><a href="#none">삼성물산 리조트부문</a></li>
+                <li><a href="#none">골프삼성</a></li>
+                <li><a href="#none">삼성화재안내견학교</a></li>
+                <li><a href="#none">서비스아카데미</a></li>
+              </ul>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="./js/jquery-3.6.3.min.js"></script>
+<script src="./js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="./js/prefixfree.min.js"></script>
+<script src="./js/style.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+</body>
+</html>

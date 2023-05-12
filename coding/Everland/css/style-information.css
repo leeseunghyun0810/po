@@ -1,0 +1,83 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+.inner {position: relative;width: 1200px;margin: 0 auto;}
+html {scroll-behavior: smooth;}
+
+/* 뉴스/공지__________ */
+#information1 {line-height: 1;color: #333;}
+#information1 h2 {margin-bottom: 90px;font-size: 32px;font-weight: bold;color: #333;text-align: center;}
+#information1 form {position: relative;display: flex;width: 570px;margin: 0 auto;margin-bottom: 55px;}
+#information1 form .information1_select {position:relative;margin-right: 10px;cursor: pointer;}
+#information1 form .information1_select .select_box {display: flex;justify-content: space-between;align-items: center;width: 170px;height: 50px;padding: 0 20px;border: 1px solid #c0c0c0;box-sizing: border-box;font-size: 18px;user-select: none;}
+#information1 form .information1_select .select_box span {font-size: 38px;}
+#information1 form .information1_select .select_box span.on {transform: rotate(180deg);}
+#information1 form .information1_select .select_list {position: absolute;display: none;width: 100%;padding: 20px;box-sizing: border-box;border: 1px solid #c0c0c0;}
+#information1 form .information1_search {width: 380px;height: 50px;border: 1px solid #c0c0c0;box-sizing: border-box;border-radius: 10px 0 0 10px;}
+#information1 form .information1_search input {width: 100%;height: 100%;background-color: transparent;border: none;outline: none;font-size: 18px;padding: 0 50px 0 10px;box-sizing: border-box;}
+#information1 form button {position: absolute;right: 0;z-index: 10;width: 50px;height: 50px;background-color: #334c76;border: none;border-radius: 0 10px 10px 0;cursor: pointer;}
+#information1 form button span {font-size: 40px;color: #fff;}
+
+.board_list_wrap {font-size: 15px;}
+.board_list_wrap .board_list {width: 100%;border-collapse: collapse;}
+.board_list_wrap .board_list caption {display: none;}
+.board_list_wrap .board_list thead {border-top: 2px solid #999;}
+.board_list_wrap .board_list thead tr th {padding: 20px 0;}
+
+.board_list_wrap .board_list tbody tr td {padding: 25px 20px;border-top: 1px solid #ccc;text-align: center;}
+.board_list_wrap .board_list tbody tr .title {padding-left: 20px;text-align: left;box-sizing: border-box;font-size: 20px;font-weight: 500;}
+.board_list_wrap .board_list tbody tr .date {font-weight: 300;}
+
+.board_list_wrap .paging {display: flex;justify-content: center;align-items: center;margin-top: 35px;}
+.board_list_wrap .paging a {display: block;font-size: 18px;}
+.board_list_wrap .paging a.number {width: 30px;height: 30px;text-align: center;line-height: 30px;color: #444;}
+.board_list_wrap .paging a.number.active {background-color: #ccc;border-radius: 50%;}
+.board_list_wrap .paging a span {font-size: 30px;}
+
+/* 운영시간 */
+#information2 {line-height: 1;}
+#information2 .title_box {text-align: center;color: #333;}
+#information2 .title_box h2 {font-size: 32px;font-weight: bold;}
+#information2 .title_box h3 {font-size: 48px;font-weight: bold;margin: 55px 0 80px 0;}
+#information2 .title_box h4 {font-size: 17px;margin-bottom: 130px;}
+#information2 .title_box h5 {font-size: 28px;font-weight: bold;margin-bottom: 115px;}
+
+#information2 .today_list li {width: 1000px;height: 180px;padding: 20px;margin: 0 auto;margin-bottom: 20px;box-sizing: border-box;background-color: #fff;box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;}
+#information2 .today_list li a {display: flex;align-items: center;font-size: 16px;color: #333;}
+#information2 .today_list li a img {width: 230px;height: 140px;margin-right: 50px;}
+#information2 .today_list li a :is(.left_box, .right_box) {display: flex;justify-content: space-between;flex-direction: column;width: 350px;height: 60px;}
+
+.right_box {position: relative;padding-left: 40px;box-sizing: border-box;}
+.right_box::before {content: '';position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 1px;height: 140px;background-color: #cecece;}
+
+.sub_tit {margin: 50px 0 25px 0;font-size: 28px;text-align: center;}
+
+/* 오시는 길 */
+#information3 h2 {margin-bottom: 50px;font-size: 32px;font-weight: bold;color: #333;text-align: center;}
+#information3 .address {border-bottom: 1px solid #9b9b9b;padding-bottom: 30px;margin-bottom: 50px;box-sizing: border-box;font-size: 20px;color: #333;}
+#information3 .address span {width: 30px;height: 30px;margin-right: 25px;}
+#information3 .address span img {width: inherit;height: inherit;}
+
+#information3 .subway, #information3 .bus {margin-bottom: 40px;}
+
+#information3 .bus > div {display: flex;}
+#information3 .bus > div:nth-of-type(1) span {border: 1px solid #fb2402;color: #fb2402;}
+#information3 .bus > div:nth-of-type(2) span {border: 1px solid #3954a5;color: #3954a5;}
+#information3 .bus > div:nth-of-type(3) span {border: 1px solid #5bb124;color: #5bb124;}
+
+#information3 .line_title {margin-bottom: 20px;font-size: 20px;}
+#information3 .line {margin: 0 25px 15px 0;font-size: 15px;color: #666;}
+#information3 .line:first-child {margin: 0;}
+#information3 .line span {display: inline-block;width: 85px;height: 28px;margin-right: 10px;border-radius: 10px;border: 1px solid #78c270;box-sizing: border-box;text-align: center;line-height: 28px;color: #78c270;}
+
+#information3 .parking {position: relative;}
+#information3 .parking .slide_area {width: 1200px;overflow: hidden;border-radius: 30px;}
+#information3 .parking .slide_area ul {width: 1900px;}
+#information3 .parking .slide_area ul li {float: left;margin-right: 20px;}
+#information3 .parking .slide_area ul li img {width: 285px;height: 600px;}
+
+#information3 .parking_btn :is(.lbtn, .rbtn) {position: absolute;top: 50%;transform: translateY(-50%);display: flex;justify-content: space-between;cursor: pointer;user-select: none;}
+#information3 .parking_btn .lbtn {left: -70px;color: #888;}
+#information3 .parking_btn .rbtn {right: -70px;color: #3954a5;}
+#information3 .parking_btn .lbtn span, #information3 .parking_btn .rbtn span {font-size: 68px;}

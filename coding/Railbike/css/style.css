@@ -1,0 +1,175 @@
+@import url(common.css);
+@font-face {font-family: 'tour';src: url(/font/tour.woff)format(woff);}
+
+/* common_____________________________ */
+.inner {width: 1200px;margin: 0 auto;}
+html {scroll-behavior: smooth;}
+
+h2.sec_title {margin-bottom: 80px;font-size: 38px;font-weight: bold;text-align: center;line-height: 1;color: #333;}
+
+.top_btn {position: fixed;right: 50px;bottom: 50px;transition: 0.3s;background: url(../images/top.png) no-repeat center / cover;}
+.top_btn a {display: block;width: 60px;height: 60px;}
+.top_btn:hover {background-image: url(../images/top_on.png);}
+
+/* header_____________________________ */
+header {width: 100%;height: 100px;}
+header .inner {display: flex;justify-content: space-between;}
+
+.logo {display: flex;align-items: center;height: 100px;}
+.gnb {display: flex;align-items: center;height: 100px;}
+.gnb li {padding: 30px;font-weight: 500;font-size: 18px;}
+.gnb li a {position: relative;transition: .3s;}
+.gnb li a::after {content: '';position: absolute;left: 0;bottom: -5px;width: 0;height: 3px;transition: 0.3s;background-color: orange;}
+.gnb li a:hover::after {width: 100%;}
+.gnb li a:hover {color: orange;}
+
+.util {display: flex;align-items: center;height: 100px;text-align: center;}
+.util li {padding-left: 25px;}
+.util li span {font-size: 30px;}
+.util li p {font-size: 14px;}
+
+/* main______________________________________ */
+main {height: calc(100vh - 100px);background-blend-mode: multiply;background-color: rgba(0, 0, 0, 0.1);background: url(../images/main.jpg) no-repeat center / cover;}
+main .inner {position: relative;}
+main .slogan_wrap {position: absolute;left: 122px;top: 100px;width: 346px;height: 346px;background: url(../images/main_box_46.png) no-repeat center / cover;}
+
+.slogan {position: absolute;left: 100px;top: 110px;width: 500px;}
+.slogan h2 {position: relative;display: inline-block;font-family: 'tour';font-weight: bold;font-size: 42px;color: crimson;}
+.slogan h2::after {content: '';position: absolute;right: -15px;bottom: 0px;width: 10px;height: 10px;background-color: crimson;}
+.slogan p {margin-top: 30px;font-family: 'tour';font-weight: 300;font-size: 36px;line-height: 50px;color: #fff;}
+
+/* tour___________________________________ */
+#tour {padding: 100px 0;}
+#tour .inner ul li {float: left;position: relative;width: 346px;height: 346px;margin: 0 81px 30px 0;}
+#tour .inner ul li:nth-child(1) {background: url(../images/land01.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(2) {background: url(../images/land02.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(3) {background: url(../images/land03.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(4) {background: url(../images/land04.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(5) {background: url(../images/land05.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(6) {background: url(../images/land06.png)no-repeat center / cover;}
+#tour .inner ul li:nth-child(3n+0) {margin-right: 0;}
+
+#tour .inner ul li::before {content: '';position: absolute;left: 0;bottom: 0;width: 100%;height: 60px;transition: 0.3s;pointer-events: none;background-color: rgba(0, 0, 0, 0.4);}
+#tour .inner ul li .bottom::after {bottom: 0; right: 0;}
+#tour .inner ul li .top::after {top: 0; left: 0;}
+#tour .inner ul li .left::after {bottom: 0; left: 0;}
+#tour .inner ul li .right::after {top: 0; right: 0;}
+
+#tour .inner ul li {position: relative;overflow: hidden;box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;}
+#tour .inner ul li :is(.top, .bottom)::after {content: '';position: absolute;width: 0;height: 5px;transition: 0.2s;background-color: royalblue;}
+#tour .inner ul li :is(.left, .right):after {content: '';position: absolute;width: 5px;height: 0;transition: 0.2s;background-color: royalblue;}
+
+#tour .inner ul li:hover::before {height: 100%;background-color: rgba(0, 0, 0, 0.8); transition-delay: .6s;}
+#tour .inner ul li:hover .tbox {bottom: 20px;transition-delay: .6s;}
+#tour .inner ul li:hover .top::after {width: 100%;}
+#tour .inner ul li:hover .right::after {height: 100%;transition-delay: .2s;}
+#tour .inner ul li:hover .bottom::after {width: 100%;transition-delay: .4s;}
+#tour .inner ul li:hover .left::after {height: 100%;transition-delay: .6s;}
+
+#tour .inner ul li a {display: block;width: inherit;height: inherit;}
+#tour .inner ul li .tbox {position: absolute;bottom: -95px;margin: 0 20px;word-break: keep-all;pointer-events: none;transition: 0.3s;color: #fff;}
+#tour .inner ul li .tbox p:nth-child(1) {display: block;font-size: 20px;line-height: 1;}
+#tour .inner ul li .tbox p:nth-child(2) {display: inline-block;margin: 15px 0;font-size: 16px;}
+#tour .inner ul li .tbox p:nth-child(3) {font-size: 13px;}
+
+/* petbike____________________ */
+#petbike {padding-bottom: 100px;box-sizing: border-box;}
+.pet_con1 {display: flex;justify-content: space-between;margin-bottom: 150px;}
+.pet_con1 .pet_tbox {padding-top: 72px;line-height: 1;}
+.pet_con1 .pet_tbox h2 {margin-bottom: 20px;font-size: 60px;line-height: 62px;}
+.pet_con1 .pet_tbox p {font-size: 22px;line-height: 32px;color: #333;}
+.pet_con1 .pet_tbox button {position: relative;margin-top: 40px;font-size: 22px;border: none;cursor: pointer;color: #333;background-color: transparent;}
+.pet_con1 .pet_tbox button::before {content: '';position: absolute;left: 0;bottom: -5px;width: 0;height: 3px;transition: 0.4s;background-color: #6f2161;}
+.pet_con1 .pet_tbox button:hover::before {width: 100%;}
+
+.pet_con1 .pet_vid {position: relative;width: 712px;height: 400px;border-radius: 15px;border: 6px solid #000;box-sizing: border-box;overflow: hidden;}
+.pet_con1 .pet_vid iframe {width: inherit;height: inherit;cursor: pointer;}
+
+/* 재생버튼_______________ ↓*/
+#playBtn, #pauseBtn {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);display: none;width: 50px;height: 50px;border-radius: 50%;text-align: center;animation: ani .5s linear forwards;background-color: rgba(0, 0, 0, 0.4);}
+#playBtn span, #pauseBtn span {font-size: 40px;line-height: 50px;cursor: pointer;color: #fff;}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1);
+  } 50% {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1.2);
+  } to {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.5);
+  }
+}
+
+.pet_con2 ul {display: flex;justify-content: space-between;}
+.pet_con2 ul li {display: flex;justify-content: center;align-items: center;width: 239px;height: 239px;border-radius: 50%;text-align: center;background-color: #072870;line-height: 28px;}
+.pet_con2 ul li p {font-size: 20px;font-weight: bold;color: #fff;}
+.pet_con2 ul li span {display: block;transition: 0.3s;}
+.pet_con2 ul li:hover p span {color: #f5821f;}
+
+/* railbike____________________ */
+#railbike {padding-bottom: 100px;}
+
+.rail_con1 ul {display: flex;height: 800px;border-radius: 15px;overflow: hidden;}
+.rail_con1 ul li {position: relative;flex: 1 ;transition: 0.7s;overflow: hidden;}
+.rail_con1 ul li:nth-child(1) {background: url(../images/rail1.jpg)no-repeat center / cover;}
+.rail_con1 ul li:nth-child(2) {background: url(../images/rail2.jpg)no-repeat center / cover;}
+.rail_con1 ul li:nth-child(3) {background: url(../images/rail3.jpg)no-repeat center / cover;}
+.rail_con1 ul li:nth-child(1):hover {background: url(../images/rail1.png)no-repeat center / contain;}
+.rail_con1 ul li:nth-child(2):hover {background: url(../images/rail2.png)no-repeat center / contain;}
+.rail_con1 ul li:nth-child(3):hover {background: url(../images/rail3.png)no-repeat center / contain;}
+
+.rail_con1 ul li:hover {flex: 4;}
+.rail_con1 ul li:hover .rail_tbox {bottom: 0;opacity: 1;visibility: visible;transition-delay: 0.2s;}
+.rail_con1 ul li:hover .rail_tbox button::before {width: 100%;}
+
+.rail_con1 ul li .rail_tbox {position: absolute;left: 0;bottom: -154px;height: 153px;padding: 15px;text-align: left;line-height: 1;opacity: 0;visibility: hidden;word-break: keep-all;transition: 0.3s;color: #fff;background-color: rgba(0, 0, 0, 0.6);}
+.rail_con1 ul li .rail_tbox h3 {font-size: 32px;}
+.rail_con1 ul li .rail_tbox p {margin: 20px 0;font-size: 17px;line-height: 24px;}
+.rail_con1 ul li .rail_tbox button {position: relative;font-size: 16px;border: none;cursor: pointer;color: #fff;background-color: transparent;}
+.rail_con1 ul li .rail_tbox button::before {content: '';position: absolute;left: 0;bottom: -5px;width: 0;height: 3px;transition: 0.6s;transition-delay: 0.5s;background-color: #f5821f;}
+
+/* service_______________________ */
+#service {margin-bottom: 100px;}
+#service .inner .map {width: 100%;}
+#service .inner .address {margin: 50PX 0 100PX 0;line-height: 1;color: #333;border-bottom: 1px solid #cfcfcf;}
+#service .inner .address h3 {position: relative;display: inline-block;margin-bottom: 20px;font-size: 30px;}
+#service .inner .address h3::after {content: '';position: absolute;right: -30px;bottom: -3px;width: 3px;height: 100%;background-color: #333;}
+#service .inner .address p {margin-bottom: 15px;font-size: 18px;}
+#service .inner .address p span {vertical-align: middle;}
+
+.notice_wrap {display: flex;}
+.notice_wrap ul {display: flex;flex-direction: column;width: 550px;margin-right: 60px;}
+.notice_wrap ul:last-child {margin-right: 0;position: relative;}
+.notice_wrap ul:last-child::before {content: '';position: absolute;left: -30px;top: 50%;transform: translateY(-50%);width: 1px;height: 100%;background-color: rgb(226, 225, 225);}
+.notice_wrap ul li {width: 100%;margin-bottom: 20px;}
+.notice_wrap ul li a {position: relative;display: block;line-height: 1;}
+
+.notice {padding: 5px;font-size: 12px;border-radius: 12px;color: #fff;background-color: crimson;}
+.text {margin: 0 10px;font-size: 16px;color: #333;}
+.date {position: absolute;right: 0;font-size: 12px;color: #666;}
+.nt_hd::after {content: '+';position: absolute;right: 0;top: 50%;transform: translateY(-50%);transition: 0.7s;font-size: 20px;}
+.nt_hd:hover::after {transform: translateY(-50%) rotate(360deg);}
+
+/* footer____________________________________ */
+footer {background-color: #626b73;}
+.policy_wrap {background-color: #464c52;}
+.policy_wrap .inner {display: flex;justify-content: space-between;align-items: center;}
+.policy {display: flex;align-items: center;height: 80px;font-size: 16px;}
+.policy li {position: relative;margin-right: 30px;}
+.policy li:not(:nth-child(3))::after {content: '';position: absolute;right: -15px;top: 50%;transform: translateY(-50%);width: 2px;height: 15px;background-color: #7c7c7c;}
+.policy li a {display: block;color: #c2c2c2;}
+
+.sns {display: flex;}
+.sns li {width: 50px;height: 50px;margin-right: 10px;border-radius: 50%;}
+.sns li:nth-child(1) {background: url(../images/icon.png) no-repeat;}
+.sns li:nth-child(2) {background: url(../images/icon.png) no-repeat -60px center;}
+.sns li:nth-child(3) {background: url(../images/icon.png) no-repeat -120px center;}
+.sns li:nth-child(4) {background: url(../images/icon.png) no-repeat -180px center;}
+
+.sns li a {display: block;width: 100%;height: 100%;}
+
+.info {display: flex;align-items: center;height: 100px;padding: 20px 0;}
+.info .inner p {font-size: 16px;line-height: 32px;color: #c2c2c2;}
+

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+/* 태블릿 */
+@media all and (min-width:768px) and (max-width:1023px) {
+
+  .inner {width: 90vw;}
+  body.active {height: 100vh;overflow: hidden;}
+  header {height: 9.7752vw;}
+  
+  .mobile_menu {left: 2.9326vw;height: 4.8876vw;display: block;}
+  .mobile_menu .trigger {width: 4.8876vw;height: 3.4213vw;margin-right: 2.9326vw;}
+  .mobile_menu .trigger span {height:0.4888vw;border-radius: 0.9775vw;}
+  .mobile_menu .mobile_search {width: 4.8876vw;height: 4.8876vw;}
+  .mobile_menu .mobile_search img {width: 4.3988vw;height: 4.3988vw;}
+
+  .top {right: 4.8876vw;bottom: 1.9550vw;}
+  .top span {font-size: 4.8876vw;}
+  .logo_wrap {padding-top:0;height: 9.7752vw;align-items: center;}
+
+  .util {right: 4.8876vw;top: 50%;transform: translateY(-50%);cursor: pointer;}
+  .util ul li {margin-left: 3.4213vw;}
+  .util ul li img {width: 4.3988vw;height: 4.3988vw;}
+  .util ul li form {display: none;}
+
+  nav {position: fixed;left: 0;top: 0;width: 100vw;height: 100vw;background-color: #fff;z-index: 9999;margin: 0;display: none;}
+  nav > ul {flex-direction: column;z-index: 10000;width: 90vw;margin-top: 12vw;}
+  nav > ul > li {position: relative;padding: 0; color: #333;height: 10vw;display: none;}
+  
+  nav > ul > li > a > .material-symbols-outlined.active {display: inline-block;vertical-align: middle;position: relative;z-index: 9999;}
+  nav > ul > li > a > p {display: inline-block;}
+  nav > ul > li > a > p.active {position: absolute;left: 0;top: 0;border-bottom: 3px solid #214360;width: 90vw;padding: 0 6vw;box-sizing: border-box;font-weight: bold;}
+
+  nav > ul > li > .depth {left: 6vw;top: 10vw;display: none;}
+  nav > ul > li > .depth li a {padding-left:0;border-left:0;}
+  nav > ul > li > .depth li a::after {display: none;}
+  
+  .depth_bg.active {display: none;}
+  .depth_bg {display: none;}
+  
+  /* main swiper 메인 스와이퍼*/
+  main {width: 100vw;height: 41vw;}
+  main .swiper-slide {font-size: 1.7595vw;}
+  main .swiper-slide img {object-fit: contain;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox {width: 100vw;padding: 0 4.8876vw;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox > span {font-size: 2.4438vw;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox p {font-size: 5.8651vw;line-height: 8.7977vw;margin-bottom: 11.7302vw;}
+  main .swiper-button-next, main .swiper-button-prev {padding: 1.4663vw;}
+  
+  /* collection 콜렉션_____________ */
+  #collection .coll_list::after {top: 2.9326vw;height: 0.0978vw;}
+  #collection .coll_list .inner ul li {margin: 0 2.0528vw;font-size: 1.3685vw;}
+  #collection .coll_list .inner ul li.active {padding-bottom: 1.3685vw;border-bottom: 0.1955vw solid #214360;}
+  #collection .swiper.mySwiper.second-swiper .swiper-wrapper {height: 25.4154vw;}
+  #collection .swiper.mySwiper.second-swiper {margin-top: 6.8426vw;}
+  #collection .col {width: 22.9717vw;height: 22.9717vw;}
+
+  /* collection swiper pagination */
+  #collection .second-swiper .swiper-pagination {height: 0.2933vw;top: 24.4379vw;}
+  
+  /* strap, boutiques 스트랩 부티크_______________________ */
+  
+  #strap {margin-top: 6.8426vw;}
+  #strap .sec_tbox {padding-left: 3.4213vw;}
+  #boutiques .sec_tbox {padding-right: 3.4213vw;}
+  :is(#strap, #boutiques) .img_wrap {width: 68.4262vw;height: 29.3255vw;}
+  :is(#strap, #boutiques) .img_wrap img {width: 68.4262vw;height: 29.3255vw;}
+  
+  
+  /* journal 저널_________________ */
+  #journal {margin-bottom: 14.6628vw;}
+  #journal .journal_item {height: 63.5386vw;width: 90vw;}
+  
+  #journal .journal_item .swiper-slide > .text {padding: 3.9101vw;backdrop-filter: blur(0.2933vw);}
+  #journal .journal_item .swiper-slide > .text h2 {font-size: 3.5191vw;margin-bottom: 1.9550vw;}
+  #journal .journal_item .swiper-slide > .text p {font-size: 1.7595vw;line-height: 3.1281vw;}
+  #journal .journal_item .swiper-slide:nth-child(1) {width: 44.3871vw;height: 43.0108vw;}
+  #journal .journal_item .swiper-slide:nth-child(2) {width: 43.4995vw;height: 30.3030vw;}
+  #journal .journal_item .swiper-slide:nth-child(3) {width: 44.3871vw;height: 17.5953vw;}
+  #journal .journal_item .swiper-slide:nth-child(4) {width: 43.4995vw;height: 30.3030vw;}
+  
+  
+  /* service 서비스____________________ */
+  #service .service_item > div {width: 45.9208vw;margin-right: 2.9326vw;}
+  #service .service_item > div:last-child {margin-right: 0px;}
+  #service .service_item > div img {width: 45.9208vw;height: 39.1007vw;margin-bottom: 2.9326vw;}
+
+  
+  /* footer 푸터______________ */
+  footer {width: 100vw;padding: 3.4213vw 0;margin-top: 9.7752vw;}
+  footer .inner .ft_title {font-size: 1.9550vw;}
+  footer .inner ul li {margin-bottom: 2.9326vw;font-size: 1.5640vw;}
+  
+  /* footer contact */
+  footer .inner .contact ul {margin-bottom: 4.8876vw;}
+  footer .inner .contact ul li {margin-bottom: 1.4663vw;}
+  footer .inner .contact ul .call, 
+  footer .inner .contact ul .email {padding-left: 4.3988vw;}
+  footer .inner .contact ul .call::before, 
+  footer .inner .contact ul .email::before {width: 2.9326vw;height: 2.9326vw;}
+  footer .inner .contact i {font-size: 1.9550vw;margin-right: 0.9775vw;}
+  footer .inner ul li a::after {bottom: -0.6843vw;height: 0.0978vw;}
+  
+  /* more 버튼 */
+  .more {font-size: 1.7595vw;}
+  .more:hover span {transform: translateX(0.9775vw);}
+  
+  .more > span {margin-left: 0.9775vw;}
+  main .more {font-size: 2.1505vw;}
+  #collection .more {margin-top: 2.9326vw;}
+  
+  /* title1 */
+  .title1 {font-size: 4.3988vw;margin: 6.8426vw 0;}
+  /* title2 */
+  .title2 {font-size: 2.9326vw;margin-bottom: 3.9101vw;}
+  /* tbox_body */
+  .tbox_body {line-height: 2.3460vw;margin-bottom: 2.9326vw;}
+} 
+
+
+
+
+
+
+
+/* 모바일_________________________________________ */
+@media all and (max-width:767px) {
+  body.active {height: 100vh;overflow: hidden;}
+  .inner {width: 90vw;}
+
+  header {height: 9.7752vw;}
+  
+  .mobile_menu {left: 2.9326vw;height: 4.8876vw;display: block;}
+  .mobile_menu .trigger {width: 4.8876vw;height: 3.4213vw;margin-right: 2.9326vw;}
+  .mobile_menu .trigger span {height:0.4888vw;border-radius: 0.9775vw;}
+  .mobile_menu .mobile_search {width: 4.8876vw;height: 4.8876vw;}
+  .mobile_menu .mobile_search img {width: 4.3988vw;height: 4.3988vw;}
+
+  .top {right: 4.8876vw;bottom: 1.9550vw;}
+  .top span {font-size: 4.8876vw;}
+  .logo_wrap {padding-top:0;height: 9.7752vw;align-items: center;}
+  .logo_wrap h1 img {width: 19vw;height: 7vw;}
+  
+  .util {right: 4.8876vw;top: 50%;transform: translateY(-50%);}
+  .util ul li {margin-left: 3.4213vw;}
+  .util ul li img {width: 4.3988vw;height: 4.3988vw;}
+  .util ul li form {display: none;}
+
+  /* nav.active {display: none;} */
+  nav {position: fixed;left: 0;top: 0;width: 100vw;height: 100vw;background-color: #fff;z-index: 9999;margin: 0;display: none;}
+  nav > ul {flex-direction: column;z-index: 10000;width: 90vw;margin-top: 12vw;}
+  nav > ul > li {position: relative;padding: 0; color: #333;height: 10vw;display: none;}
+  
+  nav > ul > li > a > .material-symbols-outlined.active {display: inline-block;vertical-align: middle;position: relative;z-index: 9999;}
+  nav > ul > li > a > p {display: inline-block;}
+  nav > ul > li > a > p.active {position: absolute;left: 0;top: 0;border-bottom: 3px solid #214360;width: 90vw;padding: 0 6vw;box-sizing: border-box;font-weight: bold;}
+
+  nav > ul > li > .depth {left: 6vw;top: 10vw;display: none;margin-top: 5vw;}
+  nav > ul > li > .depth > li {display: inline-block;width: 100%;}
+  nav > ul > li > .depth > li a {padding-left:0;border-left:0;}
+  nav > ul > li > .depth > li a::after {display: none;}
+  
+  .depth_bg.active {display: none;}
+  .depth_bg {display: none;}
+
+  /* main swiper 메인 스와이퍼*/
+  main {width: 100vw;height: 41vw;}
+  main .swiper-slide {font-size: 2.3468vw;}
+  main .swiper-slide img {object-fit: contain;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox {width: 100vw;padding: 0 4.8876vw;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox > span {font-size: 2.4438vw;}
+  main .swiper .swiper-wrapper .swiper-slide .tbox p {font-size: 5.8651vw;line-height: 8.7977vw;margin-bottom: 11.7302vw;}
+  main .swiper-button-next, main .swiper-button-prev {padding: 1.4663vw;}
+  
+  /* collection 콜렉션_____________ */
+  #collection {width: 100vw;}
+  #collection .coll_list::after {top: 4vw;height: 0.1304vw;}
+  #collection .coll_list .inner {width: 90vw;}
+  #collection .coll_list .inner ul {overflow-x: scroll;width: 90vw;-ms-overflow-style: none;scrollbar-width: none;justify-content: flex-start;}
+  #collection .coll_list .inner ul::-webkit-scrollbar {display: none;}
+  #collection .coll_list .inner ul li {margin: 0 3vw;font-size: 2.4vw;white-space: nowrap;}
+  #collection .coll_list .inner ul li.active {padding-bottom: 1.8253vw;border-bottom: 0.3vw solid #214360;}
+
+  #collection .swiper.mySwiper.second-swiper .swiper-wrapper {height: 33.8983vw;}
+  #collection .swiper.mySwiper.second-swiper {margin-top: 9.1265vw;}
+  #collection .col {width: 30.6389vw;height: 30.6389vw;}
+  #collection .col img {object-fit: contain;}
+
+  /* collection swiper pagination */
+  #collection .second-swiper .swiper-pagination {top: 32.5945vw;height: 0.3911vw;}
+  
+  /* strap, boutiques 스트랩 부티크_______________________ */
+  
+  :is(#strap, #boutiques) {flex-direction: column;align-items: center;margin-top: 10.1597vw;}
+  :is(#strap, #boutiques) .sec_tbox {width: 90vw;padding: 0;margin-top: 5vw;}
+  :is(#strap, #boutiques) .img_wrap {width: 90vw;height: 43.5414vw;}
+  :is(#strap, #boutiques) .img_wrap img {width: 90vw;height: 43.5414vw;object-fit: cover}
+  
+  /* journal 저널_________________ */
+  #journal {width: 90vw;margin-bottom: 19.5567vw;overflow: hidden;}
+  #journal .btn {display: block;top: 65%;color: #fff;}
+  #journal .swiper-button-next {right: 6vw;}
+  #journal .swiper-button-prev {left: 6vw;}
+
+  #journal .journal_item {height: 84.7458vw;display: flex;width: 400vw;height: 60vw;}
+  #journal .journal_item .swiper-slide {position: relative;}
+
+  #journal .journal_item .swiper-slide > .text {width: 90vw;left: 50%;transform: translateX(-50%);padding: 5.2151vw;backdrop-filter: blur(0.3911vw);}
+  #journal .journal_item .swiper-slide > .text h2 {font-size: 4.6936vw;margin-bottom: 2.6076vw;}
+  #journal .journal_item .swiper-slide > .text p {font-size: 2.3468vw;line-height: 4.1721vw;}
+  
+  #journal .journal_item .swiper-slide:nth-child(1) {width: 90vw;height: 60vw;background-size: 90vw;}
+  #journal .journal_item .swiper-slide:nth-child(2) {width: 90vw;height: 60vw;background-size: 90vw;}
+  #journal .journal_item .swiper-slide:nth-child(3) {width: 90vw;height: 60vw;background-size: 90vw;}
+  #journal .journal_item .swiper-slide:nth-child(4) {width: 90vw;height: 60vw;background-size: 90vw;}
+  
+  /* service 서비스____________________ */
+  #service .service_item {flex-direction: column;align-items: center;}
+  #service .service_item > div {width: 90vw;margin-bottom: 5vw;margin-right: 0;}
+  #service .service_item > div img {width: 90vw;height: 52.1512vw;margin-bottom: 3.9113vw;}
+  #service .more {padding-top: 4vw;}
+  
+/* footer 푸터______________ */
+  footer .ft_title {font-size: 4vw;}
+  footer .ft_title .ft_depth {margin-top: 3.9113vw;}
+  footer .ft_title .ft_depth > li {margin-bottom: 3.9113vw;font-size: 2.0860vw;}
+
+  footer {margin-top: 13.0378vw;padding: 8vw 0;}
+  footer .inner {position: relative;flex-direction: column;}
+  footer .inner > ul {margin-bottom: 6vw;}
+  footer .inner > ul .ft_title {display: inline-block;font-size: 4vw;}
+  footer .inner > ul .ft_title .ft_depth {position: absolute;left: 50%;top: 0;z-index: 999;display: none;margin-top: 0;}
+  footer .inner > ul .ft_title .ft_depth > li {margin-bottom: 3.9113vw;font-size: 3vw;}
+  footer .inner > ul .ft_title .ft_depth > li a::after {right: 0;bottom: -0.9126vw;width: 0;height: 0.1304vw;transition: .5s all linear;}
+  footer .inner > ul .ft_title .ft_depth > li a:hover::after {left: 0;width: 100%;}
+
+  /* footer contact */
+  footer .inner .contact {display: flex;flex-direction: column-reverse;}
+  footer .inner .contact > ul {margin-bottom: 6.5189vw;}
+  footer .inner .contact > ul:last-child {margin-bottom: 2.6076vw;}
+  footer .inner .contact > ul :is(.call, .email) {padding-left: 5.1265vw;}
+  footer .inner .contact > ul :is(.call, .email)::before {left: 0;top: 0;width: 4.2581vw;height: 4.2581vw;}
+  footer .inner .contact > ul :is(.call, .email) li {margin-bottom: 0;}
+  footer .inner .contact > ul :is(.call, .email) .ft_depth {position: absolute;left: 0;}
+  footer .inner .contact > ul .call::before {background: url(../images/call.png)no-repeat center / cover;}
+  footer .inner .contact > ul .email::before {background: url(../images/email.png)no-repeat center / cover;}
+  footer .inner .contact i {font-size: 2.6076vw;margin-right: 1.3038vw;}
+  footer .inner .contact .ft_depth {margin-top: 3vw;}
+  footer .inner .contact .ft_depth.sns {display: flex;gap: 1.3038vw;margin:0;}
+  footer .inner .contact .ft_depth.sns li {margin: 0;}
+  footer .inner .contact .ft_depth.sns i {font-size: 3.9113vw;margin-top: 1.3038vw;}
+  footer .inner .contact .ft_depth.sns p {display: none;}
+  
+  /* more 버튼 */
+  .more {font-size: 2.3468vw;}
+  .more:hover span {transform: translateX(1.3038vw);}
+  
+  .more > span {margin-left: 1.3038vw;}
+  main .more {font-size: 2.8683vw;}
+  #collection .more {margin-top: 3.9113vw;}
+  
+  /* title1 */
+  .title1 {font-size: 5.8670vw;margin: 9.1265vw 0;}
+  /* title2 */
+  .title2 {font-size: 5.8679vw;margin-bottom: 5.2151vw;}
+  /* tbox_body */
+  .tbox_body {line-height: 1.5;margin-bottom: 3.9113vw;}
+}

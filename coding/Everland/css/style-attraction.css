@@ -1,0 +1,31 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+.inner {position: relative;width: 1200px;margin: 0 auto;}
+html {scroll-behavior: smooth;}
+
+
+
+
+/* 공통 */
+#tabs {padding: 0;margin: 0;border: none;font-family: 'Noto Sans KR', sans-serif;}
+#tabs > ul {margin-bottom: 50px;background: none;border: none;}
+#tabs  ul  li {margin: 0;padding: 0;background: none;border: none;}
+#tabs  ul  li  a {display: block;margin: 0 70px 0 0;padding: 0;font-size: 22px;font-weight: 100;}
+
+/* 활성화된 글자 */
+#tabs .ui-state-active a, #tabs .ui-state-active a:link, #tabs .ui-state-active a:visited {font-weight: bold;color: #334c76;}
+
+/* 갤러리 */
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {padding: 0;margin: 0;}
+#tabs .item {position: relative;z-index: 2;}
+#tabs .item li {float: left;width: 380px;margin-right: 30px;margin-bottom: 65px;border: none;background: none;}
+#tabs .item li:nth-child(3n+0) {margin-right: 0;}
+#tabs .item li a {font-weight: 100;font-size: 22px;color: #333;}
+#tabs .item li a img {width: 380px;height: 240px;object-fit: cover;}
+#tabs .item li .text {display: flex;align-items: center;height: 50px;padding: 13px 10px;box-sizing: border-box;}
+#tabs .item li .text span img {display: block;margin-right: 13px;}
+#tabs .item li .text p {margin-right: 50px;font-size: 16px;color: #333;}
+#tabs .item li .text p:last-child {margin-right: 0;}
+#tabs .item li:hover .text > p {color: #006934;font-weight: bold;}

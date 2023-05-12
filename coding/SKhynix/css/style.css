@@ -1,0 +1,107 @@
+@import url(./reset.css);
+
+/* css 쓸 때 순서 position,top,left,right,bottom,padding,margin,float,display,width,height */
+/* common */
+.inner {margin:0 auto;width:1020px}
+.inner:after {content:"";clear:both;display:block}
+
+/* layout */
+#header {width:100%}
+#header .inner {padding:24px 0}
+#header .inner .logo {float:left}
+#header .inner .logo a {}
+#header .inner .logo a img {}
+
+#header .inner .gnb {float:left;padding-left:120px}
+#header .inner .gnb:after {content:"";clear:both;display:block}
+#header .inner .gnb li {float:left;padding-right:50px;height:52px;line-height:52px;font-size:15px;color:#121212;}
+#header .inner .gnb li a {}
+
+#header .inner .util {float:right}
+#header .inner .util:after {content:"";clear:both;display:block}
+#header .inner .util li {float:left;padding-left:20px;padding-top:10px;height:52px;font-size:10px;color:#828281;text-align:center;box-sizing:border-box;}
+#header .inner .util li a {}
+#header .inner .util li a img {}
+#header .inner .util li p {}
+
+
+#main_visual {width:100%;height:646px;background:url("../iamages/main_visual.png") no-repeat center top;}
+#main_visual .inner {}
+#main_visual .inner .slogan {padding-top:125px;color:#fff}
+#main_visual .inner .slogan .title {line-height:58px;font-size:55px;font-weight:bold;}
+#main_visual .inner .slogan .body {margin-top:30px;line-height:22px;font-size:18px}
+
+
+#container {}
+
+#container .bar_menu_wrap {background-color:#d95c4f;}
+#container .bar_menu_wrap .bar_menu {margin:0 auto;width:1020px;}
+#container .bar_menu_wrap .bar_menu .bar_menu_list {height:60px}
+#container .bar_menu_wrap .bar_menu .bar_menu_list:after {content:"";clear:both;display:block}
+#container .bar_menu_wrap .bar_menu .bar_menu_list li {float:left;padding-top:7px;width:25%;text-align:center;font-size:12px;color:#fff}
+#container .bar_menu_wrap .bar_menu .bar_menu_list li a {}
+#container .bar_menu_wrap .bar_menu .bar_menu_list li a img {}
+#container .bar_menu_wrap .bar_menu .bar_menu_list li p {}
+
+#container .section {padding:65px 0 0 0;box-sizing:border-box;}
+#container .section .inner {}
+#container .section .inner .section_title {font-size:25px;line-height:25px;color:#333;text-align:center}
+#container .section .inner .section_body {margin-top:25px;font-size:13px;line-height:24px;color:#333;text-align:center}
+
+#container .investor {}
+#container .investor .investor_contents {margin:70px 0 45px 0;border-top:1px solid #ccc}
+#container .investor .investor_contents:after {content:"";clear:both;display:block}
+#container .investor .investor_contents .investor_chart {float:left;padding:30px 0;width:399px;border-right:1px solid #ccc;text-align:center;}
+#container .investor .investor_contents .investor_chart img {}
+#container .investor .investor_contents .investor_menu {float:left;width:calc(100% - 400px)}
+#container .investor .investor_contents .investor_menu:after {content:"";clear:both;display:block}
+#container .investor .investor_contents .investor_menu li {float:left;padding:30px 0;width:33.33%;text-align:center}
+#container .investor .investor_contents .investor_menu li a {}
+#container .investor .investor_contents .investor_menu li p {font-size:14px;color:#333}
+
+#container .responsibility {background-color:#f9f7f7}
+#container .responsibility .responsibility_contents {float:left;padding-top:40px;margin-top:40px;border-top: 1px solid #ccc;box-sizing: border-box;}
+#container .responsibility.responsibility_contents::after {content: '';clear: both;display: block;}
+#container .responsibility .responsibility_contents .contents_box {
+    float:left;padding-right:10px;background: url('../iamages/corporate01.png')no-repeat left 10px top 5px;width: 33.33%;box-sizing: border-box;
+}
+#container .responsibility .responsibility_contents .contents_box li {padding-left: 85px;}
+#container .responsibility .responsibility_contents .contents_box li .contents_title {padding-bottom:10px;font-size: 14px;color:#222;line-height: 14px;}
+#container .responsibility .responsibility_contents .contents_box li .contents_body {padding-bottom:30px;font-size: 14px;color:#666}
+#container .responsibility .responsibility_contents .contents_box li .color {padding-bottom:15px;color: #cd1801;box-sizing: border-box;}
+
+#footer {background-color: #e9e9e9;}
+#footer .title {padding-bottom:15px;font-size: 10px;font-weight: bold;color: #333}
+
+#footer .disc {position: relative;;font-size:10px;color:#666}
+#footer .disc::before {position: absolute;content: '';left: -5px;top: 50%;
+    transform: translateY(-50%);display: block;width: 2px;
+    height: 2px;background-color: #7c7c7c;}
+#footer .disc.color::before {background-color: red;}
+
+
+#footer .ft_menu {}
+#footer .ft_menu .inner {}
+#footer .ft_menu .inner::after {content: '';clear: both;display: block;}
+
+#footer .ft_menu .shortcuts {float:left;padding-top:30px;width: 50%;height:225px;border-right:1px solid #cecece;box-sizing: border-box;}
+#footer .ft_menu .shortcuts .title {}
+#footer .ft_menu .shortcuts .shortcuts_list {padding-left: 5px;}
+#footer .ft_menu .shortcuts .shortcuts_list::after {content: '';clear: both;display: block;}
+#footer .ft_menu .shortcuts .shortcuts_list li {float:left;width: 50%;line-height: 14px;}
+#footer .ft_menu .shortcuts .shortcuts_list li a {}
+
+#footer .ft_service {float:right;padding-top:30px;width: 50%;height: 50%;}
+#footer .ft_service::after {content: '';clear: both;display: block;}
+#footer .ft_service .service_wrap {float: left;width: 50%;}
+#footer .ft_service .service_wrap:last-child .service_list li {padding-left: 15px;}
+#footer .ft_service .service_wrap .title {padding-left:15px;}
+#footer .ft_service .service_wrap .service_list li {padding-left:20px;line-height: 14px;}
+#footer .ft_service .service_wrap .service_list li .disc.color {color: red;}
+#footer .ft_service .service_wrap .service_list li a img {padding-top:15px}
+#footer .ft_service .service_wrap .service_list li a:last-child img {padding-top: 5px;}
+
+#footer .ft_info {background-color: #fff;}
+#footer .ft_info .inner {padding-top: 25px;}
+#footer .ft_info .inner span {padding-right:10px;font-size: 12px;line-height:20px;color:#555}
+#footer .ft_info .inner .copy {padding-bottom:45px; font-size: 8px;color:#767676}

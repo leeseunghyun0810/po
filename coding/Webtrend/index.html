@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media_query.css">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/jquery.plate.js"></script>
+</head>
+<body>
+  <div class="top">
+    <a href="#"><span class="material-symbols-outlined">expand_less</span></a>
+  </div>
+
+  <header>
+    <div class="inner">
+      <h1 class="logo"><a href="#none"><img src="images/webappers.webp" alt=""></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li><a href="#section1">Trend</a></li>
+          <li><a href="#section2">Flat Design</a></li>
+          <li><a href="#section3">Neumorphism</a></li>
+          <li><a href="#section4">BIG Font</a></li>
+        </ul>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main_visual"></div>
+  </main>
+
+  <div class="container">
+    <div class="inner">
+      
+      <div class="section1" id="section1">
+        <div class="slide">
+          <ul>
+  
+            <li>
+              <div class="sec1_wrap">
+                <p>
+                  <span>What is Glassmorphism?</span>
+                  Glassmorphism is a style which, as the name implies, uses properties of glass to enhance your designs. It gives a translucent or transparent look and feel to its elements.
+                </p>
+                <div class="imgbox glassmorphism">
+                  <img src="images/forest.webp">
+                  <div class="glass"></div>
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="sec1_wrap">
+                <p>
+                  <span>What is Card design?</span>
+                  Cards are a UI component containing content and actions about a single case. Cards can contain various elements, but they all should be about a single topic.
+                </p>
+                <div class="imgbox">
+                  <div class="card">
+                    <img src="images/nike.webp">
+                    <h6>Nike</h6>
+                    <p>$100</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="sec1_wrap">
+                <p>
+                  <span>What is Claymorphism?</span>
+                  Claymorphic 3d has been on our radar for a while with growing popularity of both easier to use 3d tools, and a possible mindset shift among the population. 
+                </p>
+                <div class="imgbox claybox">
+                  <div class="clay">
+                    <span class="tit">Claymorphism</span>
+                    <div class="actions">
+                      <button class="decline">
+                          Decline
+                      </button>
+                      <button class="valid">
+                          Accept
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="section2" id="section2">
+        <p class="title">Flat Design</p>
+        <div class="cont_wrap">
+          <div class="sec2Left clear">
+            <div class="imgbox">
+              <img src="./images/flat1.webp" alt="">
+            </div>
+            <div class="imgbox">
+              <img src="./images/flat2.webp" alt="">
+            </div>
+            <div class="imgbox">
+              <img src="./images/flat3.webp" alt="">
+            </div>
+            <div class="imgbox">
+              <img src="./images/flat4.webp" alt="">
+            </div>
+          </div>
+          <div class="sec2Right">
+            <div class="imgbox"></div>
+            <span>What is Flat Design?</span>
+            <p>
+              Flat design is a minimalist design style that is two dimensional. 
+              Inspired by Swiss style, it features contrasting color palettes, 
+              minimalist typography, white space, crisp edges,and grid-based layouts.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section3" id="section3">
+        <p class="title">Neumorphism</p>
+        <div class="sec3box">
+          <div class="imgbox"></div>
+          <div class="imgbox"></div>
+          <div class="imgbox"></div>
+          <div class="imgbox"></div>
+        </div>
+      </div>
+
+      <div class="section4" id="section4">
+        <p class="title">BIG Font</p>
+        <div class="cont_wrap">
+          <div class="sec4Left">
+            <div class="imgbox">
+              <p>MOUNTAIN</p>
+            </div>
+          </div>
+          <div class="sec4Right">
+            <div class="imgbox">
+              <p>THE <br> LATEST</p>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia temporibus unde libero earum eligendi porro eos expedita cupiditate dolorem cum?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <img src="images/webappers.webp" alt="">
+    <p class="copy">copyright &copy; 2020 SeungHyun Lee All Rights Reserved.</p>
+  </footer>
+
+<script>
+    $(".section2 .cont_wrap .imgbox").plate({
+      inverse:false,
+      perspective: 500,
+      maxRotation: 8,
+      animationDuration: 200
+    });
+  </script>
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <script src="./js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="./js/prefixfree.min.js"></script>
+  <script src="./js/style.js"></script>
+</body>
+</html>

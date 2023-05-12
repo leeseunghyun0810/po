@@ -1,0 +1,38 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+.inner {position: relative;width: 1200px;margin: 0 auto;}
+html {scroll-behavior: smooth;}
+
+/* editor__________ */
+#editor {line-height: 1;color: #333;}
+#editor h2 {margin-bottom: 90px;font-size: 32px;font-weight: bold;color: #333;text-align: center;text-transform: capitalize;}
+#editor .festival h3 {margin-bottom: 60px;font-size: 25px;font-weight: 500;color: #333;text-transform: uppercase;}
+#editor .festival .festival_items {position: relative;float: left;margin: 0 60px 60px 0;}
+#editor .festival .festival_items:hover::after {opacity: 1;}
+#editor .festival .festival_items:after {content: '\e145';font-family: 'Material Icons Outlined';position: absolute;left: 0;top: 0;width: 100%;font-size: 70px;text-align: center;line-height: 430px;background-color: rgba(0,0,0,0.7);color: #fff;opacity: 0;transition: 0.3s;pointer-events: none;}
+#editor .festival .festival_items:nth-of-type(3n+0) {margin-right: 0;}
+#editor .festival .festival_items ul li {width: 360px;height: 430px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
+#editor .festival .festival_items ul li a {display: block;}
+
+#editor .festival .festival_items ul li a .item .thumbs {position: relative;width: 360px;height: 295px;padding: 20px;box-sizing: border-box;}
+#editor .festival .festival_items ul li a .item .thumbs img {position: absolute;left: 0;top: 0;z-index: -1;width: 360px;height: 295px;}
+#editor .festival .festival_items ul li a .item .thumbs .label {width: 120px;height: 40px;border-radius: 20px;background-color: #3f61a1;color: #fff;text-transform: uppercase;font-size: 14px;text-align: center;line-height: 40px;}
+#editor .festival .festival_items ul li a .item .text {margin-top: 30px;padding: 0 20px 20px 20px;box-sizing: border-box;}
+#editor .festival .festival_items ul li a .item .text p {color: #222;}
+#editor .festival .festival_items ul li a .item .text p:nth-child(1) {font-size: 14px;text-transform: capitalize;margin-bottom: 5px;}
+#editor .festival .festival_items ul li a .item .text p:nth-child(2) {font-size: 18px;font-weight: 500;margin-bottom: 35px;}
+#editor .festival .festival_items ul li a .item .text p:nth-child(3) {font-size: 14px;color: #555;}
+
+
+
+
+
+
+
+
+
+
+

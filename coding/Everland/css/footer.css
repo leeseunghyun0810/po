@@ -1,0 +1,29 @@
+/* 푸터________________________________ */
+footer {padding: 20px 0;margin-top: 100px;box-sizing: border-box;font-size: 14px;font-weight: 500;line-height: 1;color: #999999;background-color: #555;}
+footer .inner {display: flex;justify-content: space-between;}
+
+.ft_left .ft_list {display: flex;}
+.ft_left .ft_list li {position: relative;margin-right: 20px;}
+.ft_left .ft_list li:not(:last-child)::after {content: '';position: absolute;right: -10px;top: 50%;transform: translateY(-50%);width: 1px;height: 10px;background-color: #ccc;}
+.ft_left .ft_list li:nth-child(n+4) a {color: #ccc;}
+
+.address {margin-top: 35px;}
+.address p {margin-bottom: 10px;}
+.address p span {display: inline-block;width: 1px;height: 10px;margin: 0 10px;background-color: #ccc;}
+.address p a {color: #ccc;}
+
+.copy {font-size: 12px;}
+
+.sns {margin-bottom: 50px;}
+.sns ul {display: flex;justify-content: flex-end;}
+.sns ul li {margin-left: 30px;}
+.sns ul li a {display: block;}
+
+/* 셀렉트박스_______________ */
+.select {display: flex;justify-content: flex-end;cursor: pointer;}
+.select ul {margin-left: 30px;border: 1px solid #999;border-radius: 5px;}
+.select ul > li {position: relative;display: flex;flex-direction: column-reverse;width: 140px;height: 25px;padding-left: 15px;font-size: 13px;font-weight: 500;line-height: 25px;box-sizing: border-box;}
+.select > ul > li::after {content: '\e5ce';font-family: 'Material Icons Outlined';position: absolute;right: 0;top: 0;width: 25px;height: 25px;font-size: 20px;text-align: center;border-radius: 5px;border-left: 1px solid #999;}
+.select > ul > li.on::after {transform: rotate(180deg);border-right: 1px solid #999;border-left: 0;}
+.select > ul > li > .select_dep {position: absolute;right: 0;bottom: 100%;display: none;width: 100%;box-sizing: border-box;background-color: #555;}
+.select > ul > li > .select_dep li {width: 100%;margin: 5px 0;}

@@ -1,0 +1,109 @@
+@import url(common.css);
+
+@media all and (min-width:1025px) and (max-width:1280px) {
+    #wrap {width:100%;}
+    .right_panel .thumb_list li .title {font-size:22px;padding:10px 0;}
+    .right_panel .about_page .introduce1 .bg {width: 100%;}
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    #wrap {width:100%;}
+    
+    .right_panel .about_page .introduce1 .bg {width: 100%;}
+    .right_panel .about_page .introduce2 {display: flex;flex-direction: column;}
+    .right_panel .about_page .introduce2 .education {float:none;width:100%;padding-right:0px;}
+    .right_panel .about_page .introduce2 .skill {width:100%}
+    .right_panel .about_page .introduce2 .skill .txt_wrap img {width:100%;}
+    .right_panel .thumb_list li .title {font-size:22px;padding:10px 0;}
+    .right_panel .thumb_list li {width:48%;}
+}
+
+@media all and (min-width:481px) and (max-width:767px) {
+    html.active {width: 100%;overflow: hidden;}
+    #wrap {padding:80px 20px 60px;width:100%;height: 100%;box-sizing: border-box;}
+    
+    .trigger {position: fixed;left: 20px;top: 20px;z-index: 9999;width: 40px;height: 25px;cursor: pointer;}
+    .trigger span {position: absolute;width: 100%;height: 5px;border-radius: 5px;background-color: #3f3f3f;transition:0.3s;}
+    .trigger span:nth-child(1) {top: 0;}
+    .trigger span:nth-child(2) {top: 50%;width: 75%;}
+    .trigger span:nth-child(3) {top: 100%;}
+    .trigger span.active:nth-child(1) {top: 50%;transform: rotate(225deg) rotateY(180deg);}
+    .trigger span.active:nth-child(2) {opacity: 0;}
+    .trigger span.active:nth-child(3) {top: 50%;transform: rotate(-225deg) rotateY(-180deg);}
+
+    .left_panel {float: none;left: 0;top:0;z-index: 999;width: 100%;height: 100vh;display: flex;flex-direction: column;text-align: center;box-sizing: border-box;background-color: #fff;}    
+    .left_panel .logo {margin: 0 auto;}
+    .left_panel .menu {width: 100%;margin: 0;}
+    .left_panel .menu::after {left: 50%;transform: translateX(-50%);width: 100%;}
+    .left_panel .project_list {display: flex;flex-direction: column;height: 100%;margin-top: 30px;overflow-y: scroll;background-color: #fff;}
+    .left_panel .project_list li {padding: 15px 0;margin: 0 auto;}
+    .left_panel .project_list li.active {text-indent: 0;}
+    .left_panel .project_list li::after {bottom: 10px;width: 0;height: 3px;}
+    .left_panel .project_list li.active::after {width: 100%;height: 3px;}
+
+    .right_panel {float:none;position: fixed;width: 100%;height: 100%;left:0;padding: 0;overflow-y: scroll;}
+    .right_panel .top {position: relative;left: 0;bottom: 0;transform: translateX(0);width: 100%;height:130px;}
+    .right_panel .top.active {display: none;}
+    .right_panel .thumb_list {width: 100%;}
+    .right_panel .thumb_list li {width: 100%;margin: 0 0 40px;position: initial;}
+
+    .right_panel .about_page {padding: 0 20px;}
+    .right_panel .about_page .introduce1 .bg {width: 100%;}
+    .right_panel .about_page .introduce2 {display: flex;flex-direction: column;}
+    .right_panel .about_page .introduce2 .education {float: none;width: 100%;padding-right: 0px;}
+    .right_panel .about_page .introduce2 .skill {width:100%}
+    .right_panel .about_page .introduce2 .skill .txt_wrap img {width:100%;height: auto;}
+
+    .right_panel .describe_wrap .describe_list {margin-bottom: 20px;}
+    .right_panel .describe_wrap .describe_list li {left: 0;width: 100%;}
+    .right_panel .describe_wrap .describe_list li img {width:100%;box-sizing: border-box;}
+
+    .right_panel .describe_wrap .util_btns {position:fixed;top:15px;}
+    .right_panel .describe_wrap .util_btns .close_btn {float: right;margin-left:10px;}
+    .right_panel .describe_wrap .util_btns .open_btn {float:left;margin-top:0px;}
+}
+
+@media all and (min-width:320px) and (max-width:480px) {
+    html.active {width: 100%;overflow: hidden;}
+    #wrap {padding:80px 20px 60px;width:100%;height: 100%;box-sizing: border-box;}
+    
+    .trigger {position: fixed;left: 20px;top: 20px;z-index: 9999;width: 40px;height: 25px;cursor: pointer;}
+    .trigger span {position: absolute;width: 100%;height: 5px;border-radius: 5px;background-color: #3f3f3f;transition:0.3s;}
+    .trigger span:nth-child(1) {top: 0;}
+    .trigger span:nth-child(2) {top: 50%;width: 75%;}
+    .trigger span:nth-child(3) {top: 100%;}
+    .trigger span.active:nth-child(1) {top: 50%;transform: rotate(225deg) rotateY(180deg);}
+    .trigger span.active:nth-child(2) {opacity: 0;}
+    .trigger span.active:nth-child(3) {top: 50%;transform: rotate(-225deg) rotateY(-180deg);}
+
+    .left_panel {float: none;left: 0;top:0;z-index: 999;width: 100%;height: 100vh;display: flex;flex-direction: column;text-align: center;box-sizing: border-box;background-color: #fff;}    
+    .left_panel .logo {margin: 0 auto;}
+    .left_panel .menu {width: 100%;margin: 0;}
+    .left_panel .menu::after {left: 50%;transform: translateX(-50%);width: 100%;}
+    .left_panel .project_list {display: flex;flex-direction: column;height: 100%;margin-top: 30px;overflow-y: scroll;background-color: #fff;}
+    .left_panel .project_list li {padding: 15px 0;margin: 0 auto;}
+    .left_panel .project_list li.active {text-indent: 0;}
+    .left_panel .project_list li::after {bottom: 10px;width: 0;height: 3px;}
+    .left_panel .project_list li.active::after {width: 100%;height: 3px;}
+
+    .right_panel {float:none;position: fixed;width: 100%;height: 100%;left:0;padding: 0;overflow-y: scroll;}
+    .right_panel .top {position: relative;left: 0;bottom: 0;transform: translateX(0);width: 100%;height:130px;}
+    .right_panel .top.active {display: none;}
+    .right_panel .thumb_list {width: 100%;}
+    .right_panel .thumb_list li {width: 100%;margin: 0 0 40px;position: initial;}
+
+    .right_panel .about_page {padding: 0 20px;}
+    .right_panel .about_page .introduce1 .bg {width: 100%;}
+    .right_panel .about_page .introduce2 {display: flex;flex-direction: column;}
+    .right_panel .about_page .introduce2 .education {float: none;width: 100%;padding-right: 0px;}
+    .right_panel .about_page .introduce2 .skill {width:100%}
+    .right_panel .about_page .introduce2 .skill .txt_wrap img {width:100%;height: auto;}
+
+    .right_panel .describe_wrap .describe_list {margin-bottom: 20px;}
+    .right_panel .describe_wrap .describe_list li {left: 0;width: 100%;}
+    .right_panel .describe_wrap .describe_list li img {width:100%;box-sizing: border-box;}
+
+    .right_panel .describe_wrap .util_btns {position:fixed;top:15px;}
+    .right_panel .describe_wrap .util_btns .close_btn {float: right;margin-left:10px;}
+    .right_panel .describe_wrap .util_btns .open_btn {float:left;margin-top:0px;}
+}
