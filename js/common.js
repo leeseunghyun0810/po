@@ -10,9 +10,9 @@ $(function(){
         },
         {
             "title": "IWC - Responsive",
-            "thumbImg": "./images/thumbs/iwc.png",
+            "thumbImg": "./images/thumbs/iwc_mobile.png",
             "describe": {
-                "describeImg":"./images/describe/iwc.webp",
+                "describeImg":"./images/describe/iwc_mobile.webp",
                 "pageURL":"./coding/IWC/index.html"
             }
         },
@@ -76,7 +76,7 @@ $(function(){
             "title": "SK Chemicals - PC",
             "thumbImg": "./images/thumbs/skchemicals.png",
             "describe": {
-                "describeImg":"./images/describe/skchemicals.webp",
+                "describeImg":"./images/describe/chemicals.webp",
                 "pageURL":"./coding/SKchemicals/index.html"
             }
         },
