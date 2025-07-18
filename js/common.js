@@ -1,6 +1,22 @@
 $(function(){
     const projectData = [
         {
+            "title": "MAVEN - Responsive",
+            "thumbImg": "./images/thumbs/maven.png",
+            "describe": {
+                "describeImg":"./images/describe/maven.jpg",
+                "pageURL":"https://mavenbook.co.kr/"
+            }
+        },
+        {
+            "title": "강운공업 - Responsive",
+            "thumbImg": "./images/thumbs/kangwoon.png",
+            "describe": {
+                "describeImg":"./images/describe/kangwoon.jpg",
+                "pageURL":"http://www.kangwoon.co.kr/"
+            }
+        },
+        {
             "title": "Vivienne - Mobile",
             "thumbImg": "./images/thumbs/vivienne.png",
             "describe": {
